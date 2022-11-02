@@ -1,0 +1,16 @@
+body {
+    max-width: 1920px;
+}
+
+.success_hidden {
+    display: none;
+}
+
+.container-find-percentage {
+    max-width: 500px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
