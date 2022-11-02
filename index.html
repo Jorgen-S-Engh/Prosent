@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css" disabled="disabled" id="98style">
     <script defer src="js/script.js"></script>
     <title>Document</title>
 </head>
@@ -18,15 +19,14 @@
     <div class="container m-3 d-flex justify-content-center">
         <div class="row">
             <div class="col mx-2">
-                <div class="btn btn-dark">Dark Mode</div>
+                <div class="btn btn-sm btn-dark">Dark Mode</div>
             </div>
         </div>
         <div class="row">
             <div class="col mx-2">
-                <div class="btn btn-light">Light Mode</div>
+                <button class="btn btn-sm btn-light btn-98-mode">98 Mode</button>
             </div>
         </div>
-
     </div>
     <div class="container container-find-percentage text-center border rounded">
         <h3>Finn prosenten</h3>
@@ -36,7 +36,7 @@
                 <input type="text" class="form-control my-3 part-of-number" placeholder="del av tallet">
                 <label for="whole-number">Hele tallet</label>
                 <input type="text" class="form-control my-3 whole-number" placeholder="det hele tallet">
-                <div class="btn btn-primary btn-calc-prosent">Regn ut</div>
+                <button class="btn btn-primary btn-calc-prosent">Regn ut</button>
             </form>
             <div class="alert alert-success success_hidden text-center my-3" role="alert">
                 <p>Resultat: <span class="find-percent-results"></span></p>
