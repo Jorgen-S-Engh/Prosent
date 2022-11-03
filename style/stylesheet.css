@@ -26,6 +26,10 @@ h1 {
     display: none;
 }
 
+.compound-results-hidden {
+    display: none;
+}
+
 .container-find-percentage {
     max-width: 500px;
 }
@@ -49,4 +53,9 @@ h1 {
 
 .title-bar-text {
     width: 100%;
+}
+
+.portfolio-link {
+    display: block;
+    text-align: center;
 }

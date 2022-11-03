@@ -57,7 +57,6 @@ function do98Mode() {
                                         <button aria-label="Close"></button>
                                     </div>
                                     `
-
     }else if(reminder === 0){
         nintyeight.disabled = "disabled";
         btnCalcProcent.classList.add("btn-primary", "btn")
@@ -65,12 +64,34 @@ function do98Mode() {
         header98Mode.innerHTML = ""; 
         rmBorder.classList.add("rounded");
         body.classList.remove("windows-mode")
-
     }
-    
 }
 
 
 //--------------------------Calc compounded interest ----------------
+
+// const initInvest = document.querySelector(".init-invest");
+// const interest = document.querySelector(".interests");
+// const years = document.querySelector(".years");
+const btnCalcCompound = document.querySelector(".btn-calc-compond");
+const compondResults = document.querySelector(".find-compound-results");
+const compoundResultsHidden = document.querySelector(".compound-success");
+
+
+btnCalcCompound.addEventListener("click", calcCompound)
+
+function calcCompound (e){
+    e.preventDefault()
+    const initInvest = document.querySelector(".init-invest").value;
+    const interest = document.querySelector(".interests").value;    
+    const years = document.querySelector(".years").value;  
+    const interestCalc = (interest / 100) +1
+    const sum = (initInvest *(interestCalc) ** years).toFixed(0)
+    compoundResultsHidden.classList.remove("compound-results-hidden")
+    compondResults.innerHTML = `${sum} kr`
+    console.log(sum)
+
+}
+
 
 

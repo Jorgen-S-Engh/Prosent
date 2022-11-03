@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/98.css" disabled="disabled" id="98style">
     <script defer src="js/script.js"></script>
-    <title>Document</title>
+    <title>Lol Prosent</title>
 </head>
 
 <body>
@@ -49,23 +49,36 @@
         <h3 class="title-bar title-bar-text">Rentens rente</h3>
         <form action="">
             <label for="part-of-number">Investering</label>
-            <input type="text" class="form-control my-3 part-of-number" placeholder="Antall penger du begynner med">
-            <label for="whole-number">rente</label>
-            <input type="text" class="form-control my-3 whole-number" placeholder="Renten/avkastning">
+            <input type="text" class="form-control my-3 init-invest" placeholder="Antall penger du begynner med">
+            <label for="whole-number">Rente</label>
+            <input type="text" class="form-control my-3 interests" placeholder="Renten/avkastning">
             <label for="whole-number">År</label>
-            <input type="text" class="form-control my-3 whole-number" placeholder="År du investerer">
-            <button class="btn btn-primary btn-calc-prosent">Regn ut</button>
+            <input type="text" class="form-control my-3 years" placeholder="År du investerer">
+            <button class="btn btn-primary btn-calc-compond">Regn ut</button>
         </form>
-        <div class="alert alert-success success_hidden text-center my-3 window" role="alert">
+        <div class="alert alert-success compound-success compound-results-hidden text-center my-3 window" role="alert">
             <div class="title-bar header-windows98-mode">
             </div>
-            <p>Resultat: <span class="find-percent-results"></span></p>
+            <p>Resultat: <span class="find-compound-results"></span></p>
             <p>Formel/utregning:<span class="calc-explainer"></span></p>
             <div class="status-bar status-windows98-mode">
             </div>
         </div>
     </div>
 
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="https://github.com/Jorgen-S-Engh"
+                        class="nav-link px-2 text-muted">Github</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+
+            </ul>
+            <p class="text-center text-muted">Made by Jørgen W. Engh</p>
+            <p class="text-center text-muted">Check out my portfolio:</p>
+            <a class="text-muted portfolio-link" href="https://jorgenwe.no">www.jorgenwe.no</a>
+        </footer>
+    </div>
 
 </body>
 
