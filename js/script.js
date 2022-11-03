@@ -25,8 +25,6 @@ function doDarkMode () {
 }
 
 
-// const nineeight = document.getElementById("98-stylesheet").disabled = true;
-
 // --------------------------- 98 Mode -----------------------------------------
 
 const nintyeight = document.getElementById("98style")
@@ -40,8 +38,12 @@ function do98Mode() {
     reminder = nintyeightSum % 2;
     if (reminder === 1){
         nintyeight.disabled = undefined;
+        btnCalcProcent.classList.remove("btn-primary", "btn")
+
     }else if(reminder === 0){
         nintyeight.disabled = "disabled";
+        btnCalcProcent.classList.add("btn-primary", "btn")
+
     }
     
     // console.log(sum)

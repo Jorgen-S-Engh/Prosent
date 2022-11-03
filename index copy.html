@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="style/stylesheet.css">
     <link rel="stylesheet" href="https://unpkg.com/98.css" disabled="disabled" id="98style">
     <script defer src="js/script.js"></script>
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container text-center my-5">
+    <!-- <div class="container text-center my-5">
         <h1>Prosentkalkulator</h1>
     </div>
     <div class="container m-3 d-flex justify-content-center">
@@ -50,6 +50,19 @@
                 <p>Formel/utregning:<span class="calc-explainer"></span></p>
             </div>
         </div>
+    </div> -->
+
+    <div class="container">
+        <div class="form-container">
+            <form class="calc-p-form">
+                <label for="part-of-number"> Del av tallet</label>
+                <input type="text" class="form-control my-3 part-of-number" placeholder="del av tallet">
+                <label for="whole-number">Hele tallet</label>
+                <input type="text" class="form-control my-3 whole-number" placeholder="det hele tallet">
+                <button class="btn btn-primary btn-calc-prosent">Regn ut</button>
+            </form>
+        </div>
+
     </div>
 
 </body>
