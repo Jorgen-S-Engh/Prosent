@@ -13,44 +13,59 @@
 </head>
 
 <body>
-    <div class="container text-center my-5">
+    <div class="container headline-container text-center my-5">
         <h1>Prosentkalkulator</h1>
     </div>
-    <div class="container m-3 d-flex justify-content-center">
-        <div class="row">
-            <div class="col mx-2">
-                <div class="btn btn-sm btn-dark">Dark Mode</div>
-            </div>
+
+    <div class="container mode-container my-5">
+        <h2 class="text-center h3">Modes:</h2>
+        <div class="mode-btn-container d-flex justify-content-center">
+            <button class="btn btn-sm btn-dark">Night</button>
+            <button class="btn btn-sm btn-secondary btn-98-mode">Windows 98</button>
         </div>
-        <div class="row">
-            <div class="col mx-2">
-                <button class="btn btn-sm btn-secondary btn-98-mode">98 Mode</button>
+    </div>
+
+    <!-- ------------------------Finn prosent start---------------------- -->
+    <div class="container container-find-percentage text-center border rounded window my-5">
+        <h3 class="title-bar title-bar-text">Finn prosenten</h3>
+        <form action="">
+            <label for="part-of-number"> Del av tallet</label>
+            <input type="text" class="form-control my-3 part-of-number" placeholder="del av tallet">
+            <label for="whole-number">Hele tallet</label>
+            <input type="text" class="form-control my-3 whole-number" placeholder="det hele tallet">
+            <button class="btn btn-primary btn-calc-prosent">Regn ut</button>
+        </form>
+        <div class="alert alert-success success_hidden text-center my-3 window" role="alert">
+            <div class="title-bar header-windows98-mode">
+            </div>
+            <p>Resultat: <span class="find-percent-results"></span></p>
+            <p>Formel/utregning:<span class="calc-explainer"></span></p>
+            <div class="status-bar status-windows98-mode">
             </div>
         </div>
     </div>
-    <div class="container container-find-percentage text-center border rounded">
-        <h3 class="title-bar windows-mode">Finn prosenten</h3>
-        <div class="mb-3">
-            <form action="">
-                <label for="part-of-number"> Del av tallet</label>
-                <input type="text" class="form-control my-3 part-of-number" placeholder="del av tallet">
-                <label for="whole-number">Hele tallet</label>
-                <input type="text" class="form-control my-3 whole-number" placeholder="det hele tallet">
-                <button class="btn btn-primary btn-calc-prosent">Regn ut</button>
-            </form>
-            <div class="alert alert-success success_hidden text-center my-3 window" role="alert">
-                <div class="title-bar">
-                    <div class="title-bar-controls">
-                        <button aria-label="Minimize"></button>
-                        <button aria-label="Maximize"></button>
-                        <button aria-label="Close"></button>
-                    </div>
-                </div>
-                <p>Resultat: <span class="find-percent-results"></span></p>
-                <p>Formel/utregning:<span class="calc-explainer"></span></p>
+    <!-- ------------------------Finn rentens rente start---------------------- -->
+    <div class="container container-find-percentage text-center border rounded window my-5">
+        <h3 class="title-bar title-bar-text">Rentens rente</h3>
+        <form action="">
+            <label for="part-of-number">Investering</label>
+            <input type="text" class="form-control my-3 part-of-number" placeholder="Antall penger du begynner med">
+            <label for="whole-number">rente</label>
+            <input type="text" class="form-control my-3 whole-number" placeholder="Renten/avkastning">
+            <label for="whole-number">År</label>
+            <input type="text" class="form-control my-3 whole-number" placeholder="År du investerer">
+            <button class="btn btn-primary btn-calc-prosent">Regn ut</button>
+        </form>
+        <div class="alert alert-success success_hidden text-center my-3 window" role="alert">
+            <div class="title-bar header-windows98-mode">
+            </div>
+            <p>Resultat: <span class="find-percent-results"></span></p>
+            <p>Formel/utregning:<span class="calc-explainer"></span></p>
+            <div class="status-bar status-windows98-mode">
             </div>
         </div>
     </div>
+
 
 </body>
 
